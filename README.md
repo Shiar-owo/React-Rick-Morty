@@ -58,13 +58,20 @@ src/
 │   ├── characters/
 │   │   ├── api.js           # getCharacters(), getCharacter()
 │   │   ├── CharacterCard.jsx
+│   │   ├── CharacterCard.css
 │   │   ├── FilterBar.jsx
+│   │   ├── FilterBar.css
 │   │   ├── Pagination.jsx
+│   │   ├── Pagination.css
 │   │   ├── HomePage.jsx
-│   │   └── CharacterDetailPage.jsx
+│   │   ├── HomePage.css
+│   │   ├── CharacterDetailPage.jsx
+│   │   └── CharacterDetailPage.css
 │   └── favorites/
 │       ├── useFavorites.js  # Hook con localStorage
-│       └── FavoritesPage.jsx
+│       ├── FavoritesPage.jsx
+│       └── FavoritesPage.css
+├── assets/                  # Imagenes estaticas
 └── index.css                # Variables globales + reset
 ```
 

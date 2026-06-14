@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import HomePage from './features/characters/HomePage'
-import CharacterDetailPage from './features/characters/CharacterDetailPage'
-import FavoritesPage from './features/favorites/FavoritesPage'
+import Navbar from '../components/Navbar'
+import HomePage from '../features/characters/HomePage'
+import CharacterDetailPage from '../features/characters/CharacterDetailPage'
+import FavoritesPage from '../features/favorites/FavoritesPage'
 import './App.css'
 
 function App() {
