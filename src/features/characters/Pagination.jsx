@@ -10,17 +10,17 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
         disabled={currentPage <= 1}
         onClick={() => onPageChange(currentPage - 1)}
       >
-        ← Prev
+        ← Anterior
       </button>
       <span className="pagination__info">
-        Page {currentPage} of {totalPages}
+        Pagina {currentPage} de {totalPages}
       </span>
       <button
         className="pagination__btn"
         disabled={currentPage >= totalPages}
         onClick={() => onPageChange(currentPage + 1)}
       >
-        Next →
+        Siguiente →
       </button>
     </div>
   );

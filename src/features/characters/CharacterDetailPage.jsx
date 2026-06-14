@@ -35,7 +35,7 @@ export default function CharacterDetailPage() {
     return () => { cancelled = true; };
   }, [id]);
 
-  if (state.loading) return <div className="detail__status">Loading...</div>;
+  if (state.loading) return <div className="detail__status">Cargando...</div>;
   if (state.error) return <div className="detail__status detail__status--error">{state.error}</div>;
   if (!state.character) return null;
 
@@ -44,7 +44,7 @@ export default function CharacterDetailPage() {
 
   return (
     <div className="detail">
-      <Link to="/" className="detail__back">← Back to Characters</Link>
+      <Link to="/" className="detail__back">← Volver a Personajes</Link>
 
       <div className="detail__card">
         <div className="detail__image-wrapper">
@@ -58,7 +58,7 @@ export default function CharacterDetailPage() {
               className={`detail__favorite ${favorite ? 'detail__favorite--active' : ''}`}
               onClick={() => toggleFavorite(character)}
             >
-              {favorite ? '♥ Favorited' : '♡ Add to Favorites'}
+              {favorite ? 'Favorito' : 'Agregar a Favoritos'}
             </button>
           </div>
 
@@ -73,16 +73,16 @@ export default function CharacterDetailPage() {
 
           <div className="detail__sections">
             <div className="detail__section">
-              <h3>Origin</h3>
+              <h3>Origen</h3>
               <p>{character.origin.name}</p>
             </div>
             <div className="detail__section">
-              <h3>Last Known Location</h3>
+              <h3>Ubicacion conocida</h3>
               <p>{character.location.name}</p>
             </div>
             <div className="detail__section">
-              <h3>Episodes Appeared</h3>
-              <p>{character.episode.length} episodes</p>
+              <h3>Episodios</h3>
+              <p>{character.episode.length} episodios</p>
             </div>
           </div>
         </div>

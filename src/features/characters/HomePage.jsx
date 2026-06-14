@@ -54,14 +54,14 @@ export default function HomePage() {
 
   return (
     <div className="home-page">
-      <h1 className="home-page__title">Characters</h1>
+      <h1 className="home-page__title">Personajes</h1>
       <FilterBar filters={filters} onFilterChange={handleFilterChange} />
 
-      {state.loading && <div className="home-page__status">Loading...</div>}
+      {state.loading && <div className="home-page__status">Cargando...</div>}
       {state.error && <div className="home-page__status home-page__status--error">{state.error}</div>}
 
       {!state.loading && !state.error && state.characters.length === 0 && (
-        <div className="home-page__status">No characters found.</div>
+        <div className="home-page__status">No se encontraron personajes.</div>
       )}
 
       {!state.loading && !state.error && state.characters.length > 0 && (

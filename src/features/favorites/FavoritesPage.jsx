@@ -7,17 +7,17 @@ export default function FavoritesPage() {
 
   return (
     <div className="favorites-page">
-      <h1 className="favorites-page__title">My Favorites</h1>
+      <h1 className="favorites-page__title">Mis Favoritos</h1>
 
       {favorites.length === 0 ? (
         <div className="favorites-page__empty">
           <p className="favorites-page__empty-icon">♡</p>
-          <p>No favorites yet.</p>
-          <p className="favorites-page__empty-hint">Click the heart on any character to add them here.</p>
+          <p>No hay favoritos aun.</p>
+          <p className="favorites-page__empty-hint">Haz clic en el corazon de cualquier personaje para agregarlo aqui.</p>
         </div>
       ) : (
         <>
-          <p className="favorites-page__count">{favorites.length} character{favorites.length !== 1 ? 's' : ''} favorited</p>
+          <p className="favorites-page__count">{favorites.length} personaje{favorites.length !== 1 ? 's' : ''} en favoritos</p>
           <div className="favorites-page__grid">
             {favorites.map((character) => (
               <CharacterCard

@@ -10,10 +10,10 @@ export default function Navbar() {
       </NavLink>
       <div className="navbar__links">
         <NavLink to="/" end className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`}>
-          Characters
+          Personajes
         </NavLink>
         <NavLink to="/favorites" className={({ isActive }) => `navbar__link ${isActive ? 'navbar__link--active' : ''}`}>
-          Favorites
+          Favoritos
         </NavLink>
       </div>
     </nav>

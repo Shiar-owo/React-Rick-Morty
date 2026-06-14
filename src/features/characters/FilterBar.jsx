@@ -14,7 +14,7 @@ export default function FilterBar({ filters, onFilterChange }) {
       <input
         type="text"
         className="filter-bar__input"
-        placeholder="Search by name..."
+        placeholder="Buscar por nombre..."
         value={filters.name}
         onChange={(e) => handleChange('name', e.target.value)}
       />
@@ -23,41 +23,41 @@ export default function FilterBar({ filters, onFilterChange }) {
         value={filters.status}
         onChange={(e) => handleChange('status', e.target.value)}
       >
-        <option value="">All Status</option>
-        <option value="alive">Alive</option>
-        <option value="dead">Dead</option>
-        <option value="unknown">Unknown</option>
+        <option value="">Todos los estados</option>
+        <option value="alive">Vivo</option>
+        <option value="dead">Muerto</option>
+        <option value="unknown">Desconocido</option>
       </select>
       <select
         className="filter-bar__select"
         value={filters.species}
         onChange={(e) => handleChange('species', e.target.value)}
       >
-        <option value="">All Species</option>
-        <option value="Human">Human</option>
+        <option value="">Todas las especies</option>
+        <option value="Human">Humano</option>
         <option value="Alien">Alien</option>
-        <option value="Humanoid">Humanoid</option>
+        <option value="Humanoid">Humanoide</option>
         <option value="Robot">Robot</option>
         <option value="Animal">Animal</option>
-        <option value="Disease">Disease</option>
+        <option value="Disease">Enfermedad</option>
         <option value="Cronenberg">Cronenberg</option>
         <option value="Poopybutthole">Poopybutthole</option>
-        <option value="Mythological">Mythological</option>
-        <option value="unknown">Unknown</option>
+        <option value="Mythological">Mitologico</option>
+        <option value="unknown">Desconocido</option>
       </select>
       <select
         className="filter-bar__select"
         value={filters.gender}
         onChange={(e) => handleChange('gender', e.target.value)}
       >
-        <option value="">All Gender</option>
-        <option value="female">Female</option>
-        <option value="male">Male</option>
-        <option value="genderless">Genderless</option>
-        <option value="unknown">Unknown</option>
+        <option value="">Todos los generos</option>
+        <option value="female">Femenino</option>
+        <option value="male">Masculino</option>
+        <option value="genderless">Sin genero</option>
+        <option value="unknown">Desconocido</option>
       </select>
       <button className="filter-bar__reset" onClick={handleReset}>
-        Reset
+        Limpiar
       </button>
     </div>
   );

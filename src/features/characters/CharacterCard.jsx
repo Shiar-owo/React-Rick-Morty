@@ -36,7 +36,7 @@ export default function CharacterCard({ character, isFavorite, onToggleFavorite 
           e.preventDefault();
           onToggleFavorite(character);
         }}
-        aria-label={isFavorite ? 'Remove from favorites' : 'Add to favorites'}
+        aria-label={isFavorite ? 'Eliminar de favoritos' : 'Agregar a favoritos'}
       >
         {isFavorite ? '♥' : '♡'}
       </button>
