@@ -1,0 +1,28 @@
+.home-page__title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.home-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.home-page__status {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 16px;
+  color: var(--text);
+}
+
+.home-page__status--error {
+  color: var(--danger);
+}
+
+@media (max-width: 640px) {
+  .home-page__grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+  }
+}
