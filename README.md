@@ -1,4 +1,4 @@
-# Rick & Morty Explorer
+# Rick & Morty 
 
 Plataforma web para explorar todos los personajes de la serie Rick & Morty, construida con React y la API oficial.
 
@@ -11,15 +11,17 @@ Plataforma web para explorar todos los personajes de la serie Rick & Morty, cons
 - **Favoritos** — marca personajes como favoritos y visualizalos en una pagina aparte (almacenados en localStorage)
 - **Modo oscuro** automatico segun preferencias del sistema
 - **Responsive** — se adapta a movil, tablet y escritorio
-- **Interfaz en espanol**
+- **Interfaz en español**
 
 ## Demo
 
-[Vercel Deploy](https://tu-proyecto.vercel.app)
+[Vercel Deploy](https://react-rick-morty-six.vercel.app/)
 
 ## Ejecutar localmente
 
 ```bash
+#Clonar repositorio
+git clone https://github.com/Shiar-owo/React-Rick-Morty.git
 # Instalar dependencias
 yarn install
 
@@ -77,27 +79,3 @@ Endpoints utilizados:
 | `GET /api/character/?page=X` | Lista paginada de personajes |
 | `GET /api/character/?name=X&status=Y` | Personajes filtrados |
 | `GET /api/character/:id` | Detalle de un personaje |
-
-## Estructura de commits
-
-Los commits estan organizados por responsabilidad:
-
-```
-chore: install react-router-dom
-feat: add feature-based directory structure and entry point setup
-feat: add Navbar component with routing links
-feat: add characters API layer and placeholder pages
-feat: add favorites hook and placeholder page
-feat: add CharacterCard component
-feat: add FilterBar component
-feat: add Pagination component
-feat: add HomePage with character grid, filters, and pagination
-feat: add CharacterDetailPage with full character info
-feat: add FavoritesPage with character grid and empty state
-feat: translate all UI text to Spanish
-style: replace favicon and navbar logo with pickle.png
-```
-
-## Licencia
-
-Proyecto academico — The Rick and Morty API es de uso libre.
